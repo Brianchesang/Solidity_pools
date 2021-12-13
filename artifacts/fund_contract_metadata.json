@@ -1,19 +1,48 @@
 {
 	"compiler": {
-		"version": "0.6.12+commit.27d51765"
+		"version": "0.6.0+commit.26b70077"
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "poolMembers",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "totalPoolValue",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
-			"kind": "dev",
-			"methods": {},
-			"version": 1
+			"methods": {}
 		},
 		"userdoc": {
-			"kind": "user",
-			"methods": {},
-			"version": 1
+			"methods": {}
 		}
 	},
 	"settings": {
@@ -33,11 +62,10 @@
 	},
 	"sources": {
 		"Fund Contract.sol": {
-			"keccak256": "0xb9b7d079ba3f3e5a4b06be730dae5be2128a0c177d8bd18c2631661c801f00b0",
-			"license": "MIT",
+			"keccak256": "0x07dc314a8d73b3e3efc4b96efa8d657c7c37cfdfc6e5eb06116449c02970ed24",
 			"urls": [
-				"bzz-raw://d698299bc7c396544db357018bb53269e7bda1925deaf912ad488be4c0ae3978",
-				"dweb:/ipfs/QmVXawX5wusRY9ktdwBEoAhhDvoP68pdeuHamAvVRQnLaT"
+				"bzz-raw://e046ada6625d4cb22282c3d2c36218206ab6de16f17aad4227a82e217d266d07",
+				"dweb:/ipfs/QmUoE9Yfd98rZrKJMsGsTfWh2fULgPr3CQSGTQyWGasRhc"
 			]
 		}
 	},
