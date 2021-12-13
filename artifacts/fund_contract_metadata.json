@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Fund Contract.sol": "fund_contract"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Fund Contract.sol": {
+			"keccak256": "0xb9b7d079ba3f3e5a4b06be730dae5be2128a0c177d8bd18c2631661c801f00b0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d698299bc7c396544db357018bb53269e7bda1925deaf912ad488be4c0ae3978",
+				"dweb:/ipfs/QmVXawX5wusRY9ktdwBEoAhhDvoP68pdeuHamAvVRQnLaT"
+			]
+		}
+	},
+	"version": 1
+}
