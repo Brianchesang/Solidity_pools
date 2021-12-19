@@ -7,19 +7,25 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "fund",
-				"outputs": [],
-				"stateMutability": "payable",
+				"name": "decimals",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "getEthPrice",
+				"name": "description",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "string",
 						"name": "",
-						"type": "uint256"
+						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -28,36 +34,37 @@
 			{
 				"inputs": [
 					{
-						"internalType": "uint256",
-						"name": "ethAmount",
-						"type": "uint256"
+						"internalType": "uint80",
+						"name": "_roundId",
+						"type": "uint80"
 					}
 				],
-				"name": "getEthUsdConversionRAte",
+				"name": "getRoundData",
 				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
+						"internalType": "uint80",
+						"name": "roundId",
+						"type": "uint80"
+					},
+					{
+						"internalType": "int256",
+						"name": "answer",
+						"type": "int256"
+					},
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "startedAt",
 						"type": "uint256"
-					}
-				],
-				"name": "poolMembers",
-				"outputs": [
+					},
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "updatedAt",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint80",
+						"name": "answeredInRound",
+						"type": "uint80"
 					}
 				],
 				"stateMutability": "view",
@@ -65,7 +72,40 @@
 			},
 			{
 				"inputs": [],
-				"name": "totalPoolValue",
+				"name": "latestRoundData",
+				"outputs": [
+					{
+						"internalType": "uint80",
+						"name": "roundId",
+						"type": "uint80"
+					},
+					{
+						"internalType": "int256",
+						"name": "answer",
+						"type": "int256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startedAt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "updatedAt",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint80",
+						"name": "answeredInRound",
+						"type": "uint80"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "version",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -90,7 +130,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Fund Contract.sol": "fund_contract"
+			".deps/npm/@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": "AggregatorV3Interface"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -104,20 +144,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
+		".deps/npm/@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
 			"keccak256": "0xf2b6c9adb3552254df1445b73563cf014434ff5e78663e9b961b6c059506ceb5",
 			"license": "MIT",
 			"urls": [
 				"bzz-raw://6c1f59e0c7334c22fb54288728fc32546bdc9c8133d6db0d60223e3c28f52120",
 				"dweb:/ipfs/QmeuxawUVBhMWQJXaEhhnubCTc4Jwn5wYK8gbhq6NjrpfG"
-			]
-		},
-		"Fund Contract.sol": {
-			"keccak256": "0xec6d09f139d3579d053c6a476a3873703b1ef6c49ad3c08727f07e4edaefc1db",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://3a8d01dcc00d3a3e7f1ddcb8f989d700199e9a37ff78c5d5ffe8dac3c998b65d",
-				"dweb:/ipfs/Qmee3Vfaz76QhmaphqiH8WGDsmmpsWC9YAT3K7AXM4FbfE"
 			]
 		}
 	},

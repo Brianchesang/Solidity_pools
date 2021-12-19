@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
- pragma solidity 0.6.0<=0.9.0;
+ pragma solidity >=0.6.0<=0.9.0;
  import"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
  contract fund_contract{
@@ -19,9 +19,17 @@
     }
 
     function getEthUsdConversionRAte(uint256 ethAmount) public view returns(uint256){
-        uint256 ethPrice = getPrice();
-        uint256 ethAmountInUSD = (ethAmount * ethPrice );
+        uint256 ethPrice = getEthPrice();
+        uint256 ethAmountInUSD = (ethAmount * ethPrice )/100000000;
         return ethAmountInUSD;
+    }
+
+    function fund() public payable{
+        uint256 minimumFund = 10;
+        require(getEthUsdConversionRAte(msg.value)>=minimumFund);
+        
+
+
     }
 
 
