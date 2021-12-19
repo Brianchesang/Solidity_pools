@@ -3,13 +3,10 @@
  import"@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 
  contract fund_contract{
-     struct entity {
-         address payable  Address;
-         uint256 contribution;
-     }
+     mapping(address=>uint256) addressToAmountFunded;
 
-    uint256 [] public  poolMembers;
-    uint256  public totalPoolValue ; 
+     address  [] public  poolMembers;
+     uint256  public totalPoolValue = 0 ; 
 
     
     function getEthPrice() public view returns(uint256){
@@ -27,7 +24,12 @@
     function fund() public payable{
         uint256 minimumFund = 10;
         require(getEthUsdConversionRAte(msg.value)>=minimumFund);
-        
+        addressToAmountFunded[msg.sender] += msg.value;
+        totalPoolValue = totalPoolValue + msg.value;
+        poolMembers.push(msg.sender);
+
+
+
 
 
     }

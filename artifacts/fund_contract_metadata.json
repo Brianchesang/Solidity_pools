@@ -55,9 +55,9 @@
 				"name": "poolMembers",
 				"outputs": [
 					{
-						"internalType": "uint256",
+						"internalType": "address",
 						"name": "",
-						"type": "uint256"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -113,11 +113,11 @@
 			]
 		},
 		"Fund Contract.sol": {
-			"keccak256": "0xec6d09f139d3579d053c6a476a3873703b1ef6c49ad3c08727f07e4edaefc1db",
+			"keccak256": "0xeeaa5475b676b9cac60fef48b21c6b5338b951e9d6c40ac6b6967a4b4bddbb7d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3a8d01dcc00d3a3e7f1ddcb8f989d700199e9a37ff78c5d5ffe8dac3c998b65d",
-				"dweb:/ipfs/Qmee3Vfaz76QhmaphqiH8WGDsmmpsWC9YAT3K7AXM4FbfE"
+				"bzz-raw://658dd65bd9465a04e16e4f31b42805e9cbab28d5385e120436cb94bb3f9b31c7",
+				"dweb:/ipfs/QmbqV61kKMBzvj8XjWKzjVWcnW5RZMm6gtZBvWbrvoDW4N"
 			]
 		}
 	},
