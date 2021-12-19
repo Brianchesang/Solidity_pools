@@ -27,11 +27,15 @@
         addressToAmountFunded[msg.sender] += msg.value;
         totalPoolValue = totalPoolValue + msg.value;
         poolMembers.push(msg.sender);
+    }
+
+    function getMembers()public view returns(address [] memory){
+        for (uint256 memberIndex = 0; memberIndex <= poolMembers.length; memberIndex++){
+            return poolMembers;
 
 
-
-
-
+        }
+    
     }
 
 

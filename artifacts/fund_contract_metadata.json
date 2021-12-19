@@ -45,6 +45,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getMembers",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -113,11 +126,11 @@
 			]
 		},
 		"Fund Contract.sol": {
-			"keccak256": "0xeeaa5475b676b9cac60fef48b21c6b5338b951e9d6c40ac6b6967a4b4bddbb7d",
+			"keccak256": "0x80dffb1ea979da270e473a72e7ef946972d2feed1593f2e82e81986eed72a86d",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://658dd65bd9465a04e16e4f31b42805e9cbab28d5385e120436cb94bb3f9b31c7",
-				"dweb:/ipfs/QmbqV61kKMBzvj8XjWKzjVWcnW5RZMm6gtZBvWbrvoDW4N"
+				"bzz-raw://49f259bca8c3b15e5fef90316a73947f735d897a4653c0d0e4851c2b5a224543",
+				"dweb:/ipfs/QmZ7CHuGKSK4mPQvmTQmMvujoiST5fwkonF5CiJgXEWoB7"
 			]
 		}
 	},
