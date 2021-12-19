@@ -62,10 +62,10 @@
 	},
 	"sources": {
 		"Fund Contract.sol": {
-			"keccak256": "0x07dc314a8d73b3e3efc4b96efa8d657c7c37cfdfc6e5eb06116449c02970ed24",
+			"keccak256": "0xa717aa43e04f4d10f236a3c709e5fa4bf04dc02668be913a665196c0ef3f733b",
 			"urls": [
-				"bzz-raw://e046ada6625d4cb22282c3d2c36218206ab6de16f17aad4227a82e217d266d07",
-				"dweb:/ipfs/QmUoE9Yfd98rZrKJMsGsTfWh2fULgPr3CQSGTQyWGasRhc"
+				"bzz-raw://42bf0b43bada62f47b3c47a4236bffc3030aeb1b5c8f9c3b2f8b49d4523fd615",
+				"dweb:/ipfs/QmWiHfULHuBwmJBkV8UB4xZbjCLJ5a3zWMx5Nerb7QBFzA"
 			]
 		}
 	},
